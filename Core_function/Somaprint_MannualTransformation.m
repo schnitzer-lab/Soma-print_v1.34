@@ -17,7 +17,7 @@ function [tform,map2_tform,image2_tform,mp, fp]=Somaprint_MannualTransformation(
     map2_tform=[];
     for i=1:size(map2,3)
          if mod(i,100)==0;fprintf([num2str(i),', ']);end    
-         map2_tform(:,:,i)=imwarp(map2(:,:,i),tform,'OutputView',imref2d(size(image1))); 
+         map2_tform(:,:,i)=imwarp(map2(:,:,i),tform,'OutputView',imref2d([size(image1,1),size(image1,2)])); 
     end
     fprintf(['\n']);
     
