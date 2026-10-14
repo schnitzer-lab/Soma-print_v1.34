@@ -104,7 +104,7 @@ else; % if contitune from previosu run
      iiii=i_iter;
      Somaprint_LogMessage(['- Continuing previous run, computing matched cells for round: ',num2str(iiii),' .... ...']);
      if iiii==1;   lr_cut=data_lr1st ;else; lr_cut=data_lr2nd;end
-     [data_id_cell1{iiii},data_id_cell2{iiii}]=Somaprint_ComputeMatchStatistics(data_scorewd{iiii},map1,map2_tform,data_method,lr_cut,0,data_lambda);
+     [data_id_cell1{iiii},data_id_cell2{iiii}]=Somaprint_ComputeMatchStatistics(data_scorewd{iiii},map1,map2_tform,data_method,lr_cut,data_lambda,data_gmmfilter, 0);
      emitIterationSummary(iiii, data_scorewd{iiii}, map1, map2_tform, data_method, lr_cut, data_lambda, data_gmmfilter);
 
      Somaprint_LogMessage('-------------------------------------------------');
