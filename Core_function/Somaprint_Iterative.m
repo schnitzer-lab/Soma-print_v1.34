@@ -7,7 +7,7 @@ Somaprint_LogMessage('----------------------------------------------------------
 % ======== Step 3: Soma-print, iterative algorithm ===============
 
 tic; % Start the timer
-if exist('option')==0;
+if exist('option','var')==0;
     option=GetDefaultOption;
 end
 
