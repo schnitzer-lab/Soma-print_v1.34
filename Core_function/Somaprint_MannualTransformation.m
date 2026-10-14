@@ -4,7 +4,7 @@ function [tform,map2_tform,image2_tform,mp, fp]=Somaprint_MannualTransformation(
     fprintf('----------------------  Step 2: Image pre-alignment ----------------  \n')
     fprintf(['------------------------------------------------------------------------------------------\n']);
     
-    if exist('tform')==0;
+    if exist('tform','var')==0;
 
         %[data_tform,id_cell1,id_cell2]=Somaprint_PreAlign(map1,map2);
         %[mp,fp] = cpselect(image2,image1,Wait=true);
