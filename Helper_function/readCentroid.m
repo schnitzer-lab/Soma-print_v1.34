@@ -11,7 +11,7 @@ function center1=readCentroid(ROIset)
         w_scale=1;
     end
 
-    if exist('scale')==0;
+    if exist('scale','var')==0;
         scale=1;
     end
 
