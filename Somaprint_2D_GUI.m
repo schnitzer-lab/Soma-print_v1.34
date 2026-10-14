@@ -99,9 +99,11 @@ refreshAll();
     end
 
     function buildUI()
-        app.fig = uifigure('Name', 'Soma-print 2D GUI', ...
-            'Position', [80 80 1520 920], 'Color', [0.98 0.98 0.99]);
-
+        %app.fig = uifigure('Name', 'Soma-print 2D GUI', ...
+        %    'Position', [80 80 1520 920], 'Color', [0.98 0.98 0.99]);
+        app.fig = uifigure('Name', 'Soma-print 2D GUI', 'Color', [0.98 0.98 0.99]);
+        app.fig.WindowState='maximized';
+        
         root = uigridlayout(app.fig, [3, 1]);
         root.RowHeight = {56, '1x', 44};
         root.ColumnWidth = {'1x'};
