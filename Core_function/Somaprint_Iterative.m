@@ -8,7 +8,7 @@ Somaprint_LogMessage('----------------------------------------------------------
 
 tic; % Start the timer
 if exist('option')==0;
-    option=GetDefautOption;
+    option=GetDefaultOption;
 end
 
 if exist('run_tform')==0;
