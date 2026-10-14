@@ -32,7 +32,7 @@ invivo_ROI = fullfile('Example_data','4_3D_M1_WangEtAl_Fig2','invivo_M1AVG_190um
 %invivo_ROI = 'Example_data\4_3D_M1_WangEtAl_Fig2\invivo_M1AVG_190um-zoom2-biColor_flip_in vivo avg-composite-RoiSet592.zip'; % Windows only
 
 image1=imread(invivo_image);
-[h1,w1]=size(image1); map1=readROI(invivo_ROI,h1,w1);
+h1=size(image1,1); w1=size(image1,2); map1=readROI(invivo_ROI,h1,w1);
 centroid1=Somaprint_ComputePeak(map1); % Compute centroid from in vivo maps
 
 %% ============== Step 2: Loading ex vivo Z-stack images ahd ROIs ========================================
