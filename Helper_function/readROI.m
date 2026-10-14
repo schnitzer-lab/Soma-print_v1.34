@@ -20,7 +20,7 @@ function map=readROI(ROIset,h1,w1,h_scale,w_scale,scale)
         w_scale=100;
     end
 
-    if exist('scale')==0;
+    if exist('scale','var')==0;
         scale=1;
     end
 
